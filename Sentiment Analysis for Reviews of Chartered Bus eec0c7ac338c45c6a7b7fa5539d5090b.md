@@ -2,7 +2,7 @@
 
 A chartered bus is a private vehicle rental used by private groups to take them, and only them, to their destination. With a charter bus, your group has the vehicle to themselves and gets to customize their itinerary as much as they’d like. Charter buses typically feature perks like a driver, undercarriage storage space, onboard bathrooms, free WiFi, and more.
 
-![Untitled](Sentiment%20Analysis%20for%20Reviews%20of%20Chartered%20Bus%20eec0c7ac338c45c6a7b7fa5539d5090b/Untitled.png)
+![Untitled](img/Untitled.png)
 
 The application of Chartered Bus is on Google Play Store and the reviews have been scrapped from there only. This project aims to build a sentimental analysis of customers’ experiences, being an active user of Chartered Bus I loved to choose this app. Chartered Bus is the most popular in Madhya Pradesh. While reading the dataset I obtained from Play Store, it is some mixed reactions from users. Although, the company promises to keep Reliability, Quality, Responsibility, Sincerity, Vitality, and Strong Business Ethics, let's see how the people of India look into this.
 
@@ -43,7 +43,7 @@ df=pd.DataFrame(chartered_review)
 df.head(5)
 ```
 
-![Untitled](Sentiment%20Analysis%20for%20Reviews%20of%20Chartered%20Bus%20eec0c7ac338c45c6a7b7fa5539d5090b/Untitled%201.png)
+![Untitled](img/Untitled%201.png)
 
 ```python
 df.columns
@@ -105,7 +105,7 @@ df
 
 Output:
 
-![Untitled](Sentiment%20Analysis%20for%20Reviews%20of%20Chartered%20Bus%20eec0c7ac338c45c6a7b7fa5539d5090b/Untitled%202.png)
+![Untitled](img/Untitled%202.png)
 
 As we can see the last column , resul is actually a list in which there is a dictionary with key-value pairs of  label and score.
 
@@ -127,7 +127,7 @@ df
 
 Small Snippet of that:
 
-![Untitled](Sentiment%20Analysis%20for%20Reviews%20of%20Chartered%20Bus%20eec0c7ac338c45c6a7b7fa5539d5090b/Untitled%203.png)
+![Untitled](img/Untitled%203.png)
 
 At last showing the result on pie chart.
 
@@ -138,6 +138,6 @@ a=plt.pie(df['sentiment'].value_counts(),labels=['Positive Review','Negative Rev
 
 Output:
 
-![Untitled](Sentiment%20Analysis%20for%20Reviews%20of%20Chartered%20Bus%20eec0c7ac338c45c6a7b7fa5539d5090b/Untitled%204.png)
+![Untitled](img/Untitled%204.png)
 
 Note: please refer to the jupyter notebook for code reference.
